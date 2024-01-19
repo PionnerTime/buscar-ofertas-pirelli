@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css"> <!-- Referência ao arquivo CSS externo -->
     <title>Buscar Ofertas</title>
+	<style>
+        /* Estilos para centralizar o rodapé */
+        .footer {
+            text-align: center; /* Centraliza o texto horizontalmente */
+            position: relative;
+            height: 100px; /* Altura desejada do rodapé */
+            line-height: 100px; /* Centraliza verticalmente o conteúdo dentro do rodapé */
+        }
+    </style>
 </head>
 <body class="bg-dark text-light">
     <div class="container mt-4 form-container">
@@ -62,6 +71,17 @@
 		}
 	</script>
 
+	<footer class="footer">
+        <p id="copyright">© PionnerTime 2019 - <span id="anoAtual"></span> | Versão 1.0.1</p>
+    </footer>
+
+    <script>
+        // Obtém o ano atual
+        var anoAtual = new Date().getFullYear();
+
+        // Define o texto do elemento com o id "anoAtual"
+        document.getElementById('anoAtual').innerText = anoAtual;
+    </script>
 
 </body>
 </html>
