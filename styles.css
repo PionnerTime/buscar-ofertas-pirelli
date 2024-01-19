@@ -1,0 +1,9 @@
+/* styles.css */
+
+.form-container {
+    margin: 0 auto;
+}
+
+.is-invalid {
+    border: 1px solid red !important;
+}
